@@ -1,2 +1,27 @@
-<h1>Tasks#index</h1>
-<p>Find me in app/views/tasks/index.html.erb</p>
+<body>
+
+  <section class='do-stuff'>
+    <h1> TaskList </h1>
+    <p> <a href='#'> Add a Task </a> </p>
+
+    <p> <a href='#'> All Tasks </a> </p>
+  </section>
+
+  <section class="task-info">
+    <h2> Your Tasks </h2>
+    <ul>
+      <% @tasks.each do |task| %>
+      <label for =<%= "#{task.name}" %>
+      <input type='checkbox' name='task_check' id='taskcheck'>
+      <li> <h3> <%= "#{task.name}" %> </h3>
+        <p>
+          <%= "For: #{task.category} || Due: #{task.due}" %>
+          <p>
+          </li>
+        </label>
+          <% end %>
+          <ul>
+          </section>
+
+          <footer> © 2018, Leanne Rivera </footer>
+        </body>

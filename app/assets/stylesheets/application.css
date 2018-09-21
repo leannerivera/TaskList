@@ -13,3 +13,80 @@
  *= require_tree .
  *= require_self
  */
+
+ /* * {
+   border: 1px blue solid;
+ } */
+
+ body {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   grid-template-row: 2fr 100px;
+   justify-content: center;
+   width: 50%;
+   height: 35rem;
+   border: 3px black solid;
+   margin: 0 20%;
+   overflow: scroll;
+ }
+
+ h1 {
+   text-align: center;
+ }
+
+ h2 {
+   text-align: center;
+ }
+
+ .do-stuff {
+   display: flex;
+   flex-direction: column;
+   grid-column-start: 1;
+   grid-row-start: 1;
+   /* justify-content: center; */
+   align-items: left;
+   font-size: 2rem;
+ }
+
+  .do-stuff a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .do-stuff p:hover {
+    background-color: yellow;
+  }
+
+ .do-stuff p {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   border: black 1px solid;
+   padding: 5%;
+   margin: 10%;
+   font-size: 1.5rem;
+   font-family: sans-serif;
+ }
+
+ :checked {
+   text-decoration: line-through springgreen;
+ }
+
+ .task-info {
+   grid-row-start: 1;
+   grid-column-start: 2;
+   margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #00000050 4px solid;
+  border-radius: 5%;
+}
+
+footer {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  display: flex;
+  justify-content: justify;
+  border-top: 3px black solid;
+}
