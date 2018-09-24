@@ -1,8 +1,9 @@
-
 <section class='task-info'>
 <h2> Your Tasks </h2>
   <ul>
     <li> <%= @task.name %>
+      <p>   <%= link_to "Edit", edit_task_path(@task.id) %> </p>
+      <p>   <%= link_to "Delete #{@task.name}", task_path(@task.id), method: :delete %> </p>
       <ul>
         <li> <%= @task.category %> </li>
         <li> <%= @task.due %> </li>

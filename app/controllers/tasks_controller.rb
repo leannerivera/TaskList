@@ -24,14 +24,36 @@ class TasksController < ApplicationController
     @task = Task.new
   end
 
-  def create
-    @task =Task.new(category: params[:category], name: params[:name], due: params[:due])
+  def edit
+    @task = Task.find(params[:id].to_i)
+  end
 
-    if @tasj.save # save returns true if the database insert succeeds
-      redirect_to root_path # go to the index so we can see the book in the list
-    else # save failed :(
+  def create
+    @task = Task.new(category: params[:category], name: params[:name], due: params[:due])
+
+    if @task.save # save returns true if the database insert succeeds
+      redirect_to root_path
+    else
       render :new # show the new book form view again
     end
   end
-  
+
+  def update
+    task = Task.find_by(id: params[:id].to_i)
+    task.update(task_params)
+
+    redirect_to task_path(task.id)
+  end
+
+  def destroy
+    task = Task.find_by(id: params[:id].to_i)
+    @deleted_task = task.destroy
+  end
+
+  private
+
+  def task_params
+    return params.require(:task).permit(:name, :category, :due)
+  end
+
 end
