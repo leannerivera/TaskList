@@ -12,8 +12,8 @@ class TasksController < ApplicationController
   end
 
   def show
-    id = params[:id]
-    @task = Task.all.find_by(id: id)
+    id = params[:id].to_i
+    @task = Task.find_by(id: id)
 
     if @task.nil?
         render :notfound, status: :not_found
@@ -48,6 +48,8 @@ class TasksController < ApplicationController
   def destroy
     task = Task.find_by(id: params[:id].to_i)
     @deleted_task = task.destroy
+
+    redirect_to root_path
   end
 
   private

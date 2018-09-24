@@ -15,7 +15,7 @@
       <input type='checkbox' name='task_check' id='taskcheck'>
       <li> <h3> <%= "#{task.name}" %> </h3>
       <p>
-        <%= "For: #{task.category} || Due: #{task.due}" %> ||
+        <%= "For: #{task.category} || Due: #{task.due}" %> || <%= link_to "Edit", edit_task_path(task.id) %> ||
       <%= link_to 'Delete', task_path(task.id), method: :delete %>
         <p>
       </li>
