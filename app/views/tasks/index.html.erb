@@ -4,19 +4,21 @@
     <h2> Your Tasks </h2>
     <ul>
     <% @tasks.each do |task| %>
-    <label for =<%= "#{task.name}" %>
-      <input type='checkbox' name='task_check' id='taskcheck'>
-      <li> <h3> <%= "#{task.name}" %> </h3>
+      <li> <h3 class="<%= task.completed? ? 'complete' : 'incomplete'%>"> <%= "#{task.name}" %> </h3>
       <p>
         <%= "For: #{task.category} || Due: #{task.due}" %>
       </p>
       <p>
-        <%= link_to "Complete #{task.name}", complete_task_path(task.id)%> ||
+        <% if task.completed? %>
+          <%= "Completed on #{task.completed_on}" %>
+
+        <% else %>
+          <%= link_to "Complete #{task.name}", complete_task_path(task.id)%>
+        <% end %> ||
         <%= link_to "Edit", edit_task_path(task.id) %> ||
         <%= link_to 'Delete', delete_task_path(task.id), method: :delete, data: { confirm: 'Are you sure? This cannot be undone!'} %>
       </p>
       </li>
-    </label>
       <% end %>
       <ul>
   </section>

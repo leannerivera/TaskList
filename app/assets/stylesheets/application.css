@@ -68,19 +68,19 @@
    font-family: sans-serif;
  }
 
- :checked {
-   text-decoration: line-through springgreen;
- }
+  .complete {
+    text-decoration: line-through;
+  }
 
  .task-info {
    grid-row-start: 1;
    grid-column-start: 2;
    margin: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: #00000050 4px solid;
-  border-radius: 5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: #00000050 4px solid;
+   border-radius: 5%;
 }
 
 footer {

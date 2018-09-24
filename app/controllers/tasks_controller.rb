@@ -55,7 +55,6 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id].to_i)
     @task.update_attribute(:completed_on, Time.now)
 
-    # redirect_to complete_task_path(@task.id)
   end
 
   private
