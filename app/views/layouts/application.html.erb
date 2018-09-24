@@ -11,5 +11,11 @@
 
   <body>
     <%= yield %>
+    <section class='do-stuff'>
+      <h1> TaskList </h1>
+      <p> <%=link_to "Add a Task", new_task_path %> </p>
+
+      <p> <%= link_to "All Tasks", tasks_path %>  </p>
+    </section>
   </body>
 </html>
