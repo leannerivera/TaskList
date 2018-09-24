@@ -4,7 +4,8 @@
     <h2> Your Tasks </h2>
     <ul>
     <% @tasks.each do |task| %>
-      <li> <h3 class="<%= task.completed? ? 'complete' : 'incomplete'%>"> <%= "#{task.name}" %> </h3>
+      <li>
+        <h3 class="<%= task.completed? ? 'complete' : 'incomplete'%>"> <%= "#{task.name}" %> </h3> <!-- change class to complete if marked complete, will strike through in css -->
       <p>
         <%= "For: #{task.category} || Due: #{task.due}" %>
       </p>
