@@ -29,7 +29,7 @@ class TasksController < ApplicationController
   end
 
   def create
-    @task = Task.new(category: params[:category], name: params[:name], due: params[:due])
+    @task = Task.new(task_params)
 
     if @task.save # save returns true if the database insert succeeds
       redirect_to root_path
