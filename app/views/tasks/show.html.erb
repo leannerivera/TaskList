@@ -9,7 +9,7 @@
         <li>
           <p>   <%= link_to "Complete #{@task.name}", task_path(@task.id)%> </p>
           <p>   <%= link_to "Edit", edit_task_path(@task.id) %> </p>
-          <p>    <%= link_to 'Delete', delete_task_path(task.id), method: :delete, data: { confirm: 'Are you sure? This cannot be undone!'} %> </p>
+          <p>    <%= link_to 'Delete', delete_task_path(@task.id), method: :delete, data: { confirm: 'Are you sure? This cannot be undone!'} %> </p>
         </li>
       </ul>
     </li>
