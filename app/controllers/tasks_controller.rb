@@ -49,7 +49,6 @@ class TasksController < ApplicationController
     task = Task.find_by(id: params[:id].to_i)
     @deleted_task = task.destroy
 
-    redirect_to root_path
   end
 
   private
