@@ -1,4 +1,3 @@
-
 <section class='task-info'>
 <h2> Your Tasks </h2>
   <ul>
@@ -7,7 +6,7 @@
         <li> <%= @task.category %> </li>
         <li> <%= @task.due %> </li>
         <li>
-          <p>   <%= link_to "Complete #{@task.name}", task_path(@task.id)%> </p>
+          <p>   <%= link_to "Complete #{@task.name}", complete_task_path(@task.id), method: :patch%> </p>
           <p>   <%= link_to "Edit", edit_task_path(@task.id) %> </p>
           <p>    <%= link_to 'Delete', delete_task_path(@task.id), method: :delete, data: { confirm: 'Are you sure? This cannot be undone!'} %> </p>
         </li>

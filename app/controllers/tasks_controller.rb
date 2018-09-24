@@ -28,12 +28,6 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id].to_i)
   end
 
-  def confirm
-    Task.find_by(id: params[:id].to_i)
-
-    redirect_to confirm_delete_path
-  end
-
   def create
     @task = Task.new(task_params)
 
@@ -55,6 +49,13 @@ class TasksController < ApplicationController
     task = Task.find_by(id: params[:id].to_i)
     @deleted_task = task.destroy
 
+  end
+
+  def complete
+    @task = Task.find(params[:id].to_i)
+    @task.update_attribute(:completed_on, Time.now)
+
+    # redirect_to complete_task_path(@task.id)
   end
 
   private

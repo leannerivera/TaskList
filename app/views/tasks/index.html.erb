@@ -11,7 +11,7 @@
         <%= "For: #{task.category} || Due: #{task.due}" %>
       </p>
       <p>
-        <%= link_to "Complete #{task.name}", update_task_path(task.id)%> ||
+        <%= link_to "Complete #{task.name}", complete_task_path(task.id)%> ||
         <%= link_to "Edit", edit_task_path(task.id) %> ||
         <%= link_to 'Delete', delete_task_path(task.id), method: :delete, data: { confirm: 'Are you sure? This cannot be undone!'} %>
       </p>
