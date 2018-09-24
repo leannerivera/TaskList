@@ -5604,3 +5604,3886 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/tasks/23/edit" for 127.0.0.1 at 2018-09-23 20:25:17 -0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:28
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.5ms)
+  Rendered tasks/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/23/edit" for 127.0.0.1 at 2018-09-23 20:25:23 -0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:28
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.5ms)
+  Rendered tasks/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2018-09-23 20:25:27 -0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:28
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (2.1ms)
+  Rendered tasks/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/tasks/23" for 127.0.0.1 at 2018-09-23 20:25:32 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"itR4D31qPWGlK8U/Bs1ifJIfsp/7gWkQ/xocP/g9PjlDIiNitup9TG3DXjkRhamiHkEXlPySj4t5AKEjcx7ikw==", "method"=>:destroy, "id"=>"23"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 16.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:25:33 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/tasks/2" for 127.0.0.1 at 2018-09-23 20:25:34 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4XGvye988tx4Dvxxk4yNdXkh75EhSCTJANcuasp6CEwoh/SkJPyy8bDmZ3eExEar9X9KmiZbwlKGzZN2QVnU5g==", "method"=>:destroy, "id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 14.4ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:25:36 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/tasks/1" for 127.0.0.1 at 2018-09-23 20:25:37 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nxAQUJwQdyavB+EMPke/SI5joEom0tPzHWMNdv6pAeNW5ks9V5A3C2fvegopD3SWAj0FQSHBNWibebBqdYrdSQ==", "method"=>:destroy, "id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 15.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:25:39 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-23 20:25:39 -0800
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.4ms)
+  Rendered tasks/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-23 20:25:43 -0800
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oi8HeqTL+/iWgMbtebBEmu2b61EWVgq/zCjjWHbWCAXcXY+exlkzEmVjfJ3e/e7bd7vXz0X6p7uvJWuL7ArohA==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"today"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:34
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("category", "name", "due", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category", "School"], ["name", "Finish work"], ["due", "today"], ["created_at", "2018-09-24 04:25:43.567220"], ["updated_at", "2018-09-24 04:25:43.567220"]]
+  ↳ app/controllers/tasks_controller.rb:34
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:34
+Redirected to http://www.localhost:3000/
+Completed 200 OK in 9ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-23 20:25:43 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/29/edit" for 127.0.0.1 at 2018-09-23 20:25:44 -0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:28
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.9ms)
+  Rendered tasks/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/tasks/29" for 127.0.0.1 at 2018-09-23 20:25:53 -0800
+Processing by TasksController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0qMoPIhttFfmRqWpT+h5EjvWmZNFXfALG9pVZOdlbKd+Sq+0VyDPwz0xTXQzoGQhh7Shu1ehnM0gO5dI2kAYtw==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"tomorrow"}, "commit"=>"Edit", "id"=>"29"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:43
+  [1m[36mTask Update (0.3ms)[0m  [1m[33mUPDATE "tasks" SET "due" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["due", "tomorrow"], ["updated_at", "2018-09-24 04:25:53.060761"], ["id", 29]]
+  ↳ app/controllers/tasks_controller.rb:43
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:43
+Redirected to http://www.localhost:3000/tasks/29
+Completed 200 OK in 10ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/tasks/29" for 127.0.0.1 at 2018-09-23 20:25:53 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:25:59 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:28:55 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-23 20:28:56 -0800
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.8ms)
+  Rendered tasks/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-23 20:29:00 -0800
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v5gzKVYPA5P21oT3MTKtRea2+jxqXQpx59ohej+hIXjB6rvNNJ3LeQU1PoeWfwcEfJbGojnxp3WE16mppX3B+Q==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"today"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:34
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("category", "name", "due", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category", "School"], ["name", "Finish work"], ["due", "today"], ["created_at", "2018-09-24 04:29:00.766992"], ["updated_at", "2018-09-24 04:29:00.766992"]]
+  ↳ app/controllers/tasks_controller.rb:34
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:34
+Redirected to http://www.localhost:3000/
+Completed 200 OK in 9ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-23 20:29:00 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/tasks/29" for 127.0.0.1 at 2018-09-23 20:29:02 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2fVMyNxtZFsYoeoBaXcaBBupWFxqD4CuQVJtdXhTCnUQAxelF+0kdtBJcQd+P9Hal/f9V20cZjXHSNBp83DW3w==", "method"=>:destroy, "id"=>"29"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 29]]
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 22.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:29:05 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:33:49 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:33:51 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:33:52 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-23 20:33:52 -0800
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.8ms)
+  Rendered tasks/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-23 20:33:58 -0800
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gWp2nbYOLx4WBnFTnFi+aZL9X8/eZVpyuTJ4Z90XKd//GP551Jzn9OXlyyM7FRQoCN1jUY3J93baP/C0R8vJXg==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"today"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:34
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("category", "name", "due", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category", "School"], ["name", "Finish work"], ["due", "today"], ["created_at", "2018-09-24 04:33:58.670620"], ["updated_at", "2018-09-24 04:33:58.670620"]]
+  ↳ app/controllers/tasks_controller.rb:34
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:34
+Redirected to http://www.localhost:3000/
+Completed 200 OK in 9ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-23 20:33:58 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/31/edit" for 127.0.0.1 at 2018-09-23 20:34:00 -0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:28
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.5ms)
+  Rendered tasks/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/tasks/31" for 127.0.0.1 at 2018-09-23 20:34:05 -0800
+Processing by TasksController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Rg0hss+vjkAnph71Dj+R3v23bn86XHECLS2S0ZeyF/ODIdZMdFPCDSuC7A5TWEDfNO2KsYSakSxJSs0jAbZ4A==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"tomorrow"}, "commit"=>"Edit", "id"=>"31"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:43
+  [1m[36mTask Update (0.2ms)[0m  [1m[33mUPDATE "tasks" SET "due" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3[0m  [["due", "tomorrow"], ["updated_at", "2018-09-24 04:34:05.681468"], ["id", 31]]
+  ↳ app/controllers/tasks_controller.rb:43
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:43
+Redirected to http://www.localhost:3000/tasks/31
+Completed 200 OK in 10ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/tasks/31" for 127.0.0.1 at 2018-09-23 20:34:05 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/tasks/31" for 127.0.0.1 at 2018-09-23 20:34:16 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WSxxNMCY6pLRLA/EgDc6QLthbcvhl1JjfR2NK72UdT+Q2ipZCxiqvxnElMKXf/GeNz/IwOaEtPj7BzA3NreplQ==", "method"=>:destroy, "id"=>"31"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 31]]
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 14.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-23 20:34:17 -0800
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.7ms)
+  Rendered tasks/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:34:19 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:35:53 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:36:21 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:36:22 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:36:22 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:36:34 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:36:35 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:36:35 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:36:35 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:36:35 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/30/edit" for 127.0.0.1 at 2018-09-23 20:37:03 -0800
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:28
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (2.1ms)
+  Rendered tasks/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/tasks/30" for 127.0.0.1 at 2018-09-23 20:37:04 -0800
+Processing by TasksController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zgo3XEZnNTVRPbVfMlxQdIcaptGGXQeQYeR2EACtJs/yY6vuwmPSwd2Tak8hI2axqRjzzus/lsj+/auzJk9Bxg==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"today"}, "commit"=>"Edit", "id"=>"30"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:43
+Redirected to http://www.localhost:3000/tasks/30
+Completed 200 OK in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/30" for 127.0.0.1 at 2018-09-23 20:37:04 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:37:19 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:38:06 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:38:43 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:38:56 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/30" for 127.0.0.1 at 2018-09-23 20:39:13 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/30" for 127.0.0.1 at 2018-09-23 20:39:14 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/30" for 127.0.0.1 at 2018-09-23 20:39:15 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:39:32 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:39:33 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-23 20:39:34 -0800
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.5ms)
+  Rendered tasks/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-23 20:39:38 -0800
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KqcegBL0FOoI41bekU7XNl0TYps3yJ6IaJFO1As1/4RU1ZZkcGbcAPsA7K42A313xzNeBWRkM4wLnMYHkekfBQ==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"now"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:34
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("category", "name", "due", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category", "School"], ["name", "Finish work"], ["due", "now"], ["created_at", "2018-09-24 04:39:38.896647"], ["updated_at", "2018-09-24 04:39:38.896647"]]
+  ↳ app/controllers/tasks_controller.rb:34
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:34
+Redirected to http://www.localhost:3000/
+Completed 200 OK in 9ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-23 20:39:38 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-23 20:39:40 -0800
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.5ms)
+  Rendered tasks/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-23 20:39:44 -0800
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VS8CrTbSZ4C4tt4YVA+VCv4mItKt7HJyLRmFvb1yn9IrXYpJVECvaktVZGjzQj9LZAYeTP5A33ZOFA1uJ65/Uw==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"tomorrow"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:34
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("category", "name", "due", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category", "School"], ["name", "Finish work"], ["due", "tomorrow"], ["created_at", "2018-09-24 04:39:44.542703"], ["updated_at", "2018-09-24 04:39:44.542703"]]
+  ↳ app/controllers/tasks_controller.rb:34
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:34
+Redirected to http://www.localhost:3000/
+Completed 200 OK in 9ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-23 20:39:44 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-23 20:39:52 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-23 20:41:00 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-23 20:46:26 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 28ms (Views: 22.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/tasks/30" for 127.0.0.1 at 2018-09-23 20:46:28 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/30" for 127.0.0.1 at 2018-09-23 20:46:29 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:46:32 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/30" for 127.0.0.1 at 2018-09-23 20:46:35 -0800
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:16
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:46:37 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/tasks/32" for 127.0.0.1 at 2018-09-23 20:47:09 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lni27kOr9wAGQLUz53tBWbr3gjt7RTupdbeH4bYJpilfju2DiCu3Lc6oLjXwM4qHNqknMHxW3TLzrTr9PSp6gw==", "method"=>:destroy, "id"=>"32"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 32]]
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 17.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:47:11 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/tasks/30" for 127.0.0.1 at 2018-09-23 20:47:12 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"huDdDgvP2NVR1BrMiHsOhfRayhPlQfg4jRV2M9bucwJPFoZjwE+Y+Jk8gcqfM8VbeARvGOJSHqMLD8svXc2vqA==", "method"=>:destroy, "id"=>"30"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 22.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:47:13 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/tasks/33" for 127.0.0.1 at 2018-09-23 20:47:14 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dznjJBhFqhz6gJcg+4twr850/BXI6DbgHc+jTyBa8I2+z7hJ08XqMTJoDCbsw7txQipZHs/70Hub1R5Tq3ksJw==", "method"=>:destroy, "id"=>"33"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 33]]
+  ↳ app/controllers/tasks_controller.rb:50
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:50
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:47:16 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:47:17 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-23 20:47:30 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:31:09 -0800
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/leanne/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (25.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 236ms (Views: 198.0ms | ActiveRecord: 27.1ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-24 09:31:12 -0800
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (8.4ms)
+  Rendered tasks/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 50ms (Views: 24.1ms | ActiveRecord: 18.4ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-24 09:31:17 -0800
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TmS2uPbXGt9pNqYYjXHbjzUuN52BcPd3pfjtAcKB5CAwFj5clEXSNZrVHGgqPHHOrw4LA9LcWnPG9WXSWF0EoQ==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"today"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:38
+  [1m[36mTask Create (23.4ms)[0m  [1m[32mINSERT INTO "tasks" ("category", "name", "due", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category", "School"], ["name", "Finish work"], ["due", "today"], ["created_at", "2018-09-24 17:31:17.279594"], ["updated_at", "2018-09-24 17:31:17.279594"]]
+  ↳ app/controllers/tasks_controller.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:38
+Redirected to http://www.localhost:3000/
+Completed 200 OK in 28ms (ActiveRecord: 24.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:31:17 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-24 09:31:18 -0800
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (2.3ms)
+  Rendered tasks/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-24 09:31:22 -0800
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zOcugkEliTByrK/dnB6mWWpoxL4M6iVvxAiO5VaVXm+ylaZmI7dB2oFPFa07UwwY8Ej4IF9GiGunBQY2zEm+7g==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"now"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:38
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("category", "name", "due", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category", "School"], ["name", "Finish work"], ["due", "now"], ["created_at", "2018-09-24 17:31:22.640446"], ["updated_at", "2018-09-24 17:31:22.640446"]]
+  ↳ app/controllers/tasks_controller.rb:38
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:38
+Redirected to http://www.localhost:3000/
+Completed 200 OK in 9ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:31:22 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-24 09:31:23 -0800
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.8ms)
+  Rendered tasks/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-24 09:31:28 -0800
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cfp64CTA4i81cLgBPYGYCX10+6Phxqzg5kIy0LZdglp3iPIERlIqxcaTAnGazDJI51THPbJqAeSFT7oDLIFi2w==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"tomorrow"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:38
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("category", "name", "due", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category", "School"], ["name", "Finish work"], ["due", "tomorrow"], ["created_at", "2018-09-24 17:31:28.570992"], ["updated_at", "2018-09-24 17:31:28.570992"]]
+  ↳ app/controllers/tasks_controller.rb:38
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:38
+Redirected to http://www.localhost:3000/
+Completed 200 OK in 9ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:31:28 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/tasks/34" for 127.0.0.1 at 2018-09-24 09:31:30 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZCjqxWesWd/0fjr0GPpiWAGOtFsC9Fw1HK3nrRn7Sget3rGorCwZ8jyWofIPsqmGjdARUAXnuq6at1qxktiWrQ==", "method"=>:destroy, "id"=>"34"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:54
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 34]]
+  ↳ app/controllers/tasks_controller.rb:54
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:54
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 24.4ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-24 09:31:36 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 29ms (Views: 25.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-24 09:31:37 -0800
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (2.5ms)
+  Rendered tasks/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-24 09:31:41 -0800
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B/oPf9qz4hooZWaQ13leQFTUZKcIQ7qKgMUsLqp90Dt5iIebuCEq8NuG3OBwNPQBzvRYOVvvF47jyKT9MKEwug==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"today"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:38
+  [1m[36mTask Create (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("category", "name", "due", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category", "School"], ["name", "Finish work"], ["due", "today"], ["created_at", "2018-09-24 17:31:41.711117"], ["updated_at", "2018-09-24 17:31:41.711117"]]
+  ↳ app/controllers/tasks_controller.rb:38
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:38
+Redirected to http://www.localhost:3000/
+Completed 200 OK in 15ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:31:41 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:32:23 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (143.4ms)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.2ms)
+
+
+
+NoMethodError - undefined method `delete_confirm_path' for #<#<Class:0x00007fc066c49c20>:0x00007fc0627662e8>
+Did you mean?  confirm_delete_path:
+  app/views/tasks/index.html.erb:16:in `block in _app_views_tasks_index_html_erb___280479359506035605_70232131188260'
+  app/views/tasks/index.html.erb:6:in `_app_views_tasks_index_html_erb___280479359506035605_70232131188260'
+
+Started POST "/__better_errors/456e3bd41bdc4ccf/variables" for 127.0.0.1 at 2018-09-24 09:32:24 -0800
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:32:46 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:32:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `delete_confirm_path' for #<TasksController:0x00007fc068c43ee0>
+Did you mean?  confirm_delete_path:
+  app/controllers/tasks_controller.rb:32:in `confirm'
+
+Started POST "/__better_errors/1359156514fc2b7b/variables" for 127.0.0.1 at 2018-09-24 09:32:48 -0800
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:33:01 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 25ms (Views: 19.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:03 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:05 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:06 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:11 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:33:12 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:14 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:15 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:33:44 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:46 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:47 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:33:52 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:33:53 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:34:49 -0800
+
+ArgumentError - Missing :controller key on routes definition, please check your routes.:
+  config/routes.rb:12:in `block in <main>'
+  config/routes.rb:1:in `<main>'
+
+Started POST "/__better_errors/6afde8a978623591/variables" for 127.0.0.1 at 2018-09-24 09:34:50 -0800
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:36:00 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 32ms (Views: 23.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:02 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.5ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: task:
+  app/controllers/tasks_controller.rb:63:in `task_params'
+  app/controllers/tasks_controller.rb:33:in `confirm'
+
+Started POST "/__better_errors/50cf483fc0fd3344/variables" for 127.0.0.1 at 2018-09-24 09:36:02 -0800
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:36:32 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:39:24 -0800
+
+AbstractController::ActionNotFound - The action 'confirm' could not be found for TasksController:
+
+Started POST "/__better_errors/453114530a9856d8/variables" for 127.0.0.1 at 2018-09-24 09:39:24 -0800
+Started POST "/__better_errors/453114530a9856d8/variables" for 127.0.0.1 at 2018-09-24 09:39:42 -0800
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:40:56 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 30ms (Views: 22.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/tasks/36/delete_confirm" for 127.0.0.1 at 2018-09-24 09:40:59 -0800
+Processing by TasksController#confirm as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:32
+Redirected to http://www.localhost:3000/tasks/36/delete_confirm
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:42:44 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (144.3ms)
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 3.1ms)
+
+
+
+NoMethodError - undefined method `delete_path' for #<#<Class:0x00007fc068ca9d80>:0x00007fc068ca81b0>
+Did you mean?  delete_task_path:
+  app/views/tasks/index.html.erb:16:in `block in _app_views_tasks_index_html_erb___280479359506035605_70232184279800'
+  app/views/tasks/index.html.erb:6:in `_app_views_tasks_index_html_erb___280479359506035605_70232184279800'
+
+Started POST "/__better_errors/5d255913b089d344/variables" for 127.0.0.1 at 2018-09-24 09:42:44 -0800
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:42:53 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/tasks/36" for 127.0.0.1 at 2018-09-24 09:42:54 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qouwuZq++PaLIpO2dv3Nhhr6W6BhHtYPJnDvYCxfSB3Dw5eCnAMLvcF/j1IT/FN9eXzvSXvVFv79beC8EC9uzg==", "method"=>:destroy, "id"=>"36"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:56
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 36]]
+  ↳ app/controllers/tasks_controller.rb:56
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:56
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 26.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:43:15 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/tasks/35" for 127.0.0.1 at 2018-09-24 09:43:16 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+I01GfOec4n8FveZHMUgVjzv8iCqsayXPNxCbXABT4SRxRIi9SOAwrZL6315xL6tX2lGybB6bGbnwU2xTHFpVw==", "method"=>:destroy, "id"=>"35"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:56
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 35]]
+  ↳ app/controllers/tasks_controller.rb:56
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:56
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 24.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-24 09:43:18 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-24 09:43:53 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-24 09:43:54 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-09-24 09:43:55 -0800
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.7ms)
+  Rendered tasks/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-09-24 09:44:00 -0800
+Processing by TasksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HbH5ovSmONjFWt/Jz1CFjtNaM/frjeYjdiC3i/Eoo1cmMG+ci7IH/dN2gTJvjud+di5z8eCgod2PQJWVw6M/ng==", "task"=>{"name"=>"Finish work", "category"=>"School", "due"=>"now"}, "commit"=>"Add"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:40
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("category", "name", "due", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["category", "School"], ["name", "Finish work"], ["due", "now"], ["created_at", "2018-09-24 17:44:00.380577"], ["updated_at", "2018-09-24 17:44:00.380577"]]
+  ↳ app/controllers/tasks_controller.rb:40
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:40
+Redirected to http://www.localhost:3000/
+Completed 200 OK in 10ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 09:44:00 -0800
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:6
+  Rendered tasks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/tasks/38" for 127.0.0.1 at 2018-09-24 09:44:04 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CNjWHHbf5yobDYJZ/kfkILsmFD84ty5rfv9CKdtd1ZJhkPEncGIUYVFQnr2bRnrb2KCg1iJ87pql4k315y3zQQ==", "method"=>:destroy, "id"=>"38"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:56
+  [1m[36mTask Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 38]]
+  ↳ app/controllers/tasks_controller.rb:56
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:56
+  Rendering tasks/destroy.html.erb within layouts/application
+  Rendered tasks/destroy.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 17.7ms | ActiveRecord: 2.6ms)
+
+
